@@ -374,8 +374,8 @@ footer {
 /* front-img */
 .front-img {
     width: 100%;
-    height: 60vh;
-    background: url(Scr/header.png);
+    height: 70vh;
+    background: url(Scr/footer.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
