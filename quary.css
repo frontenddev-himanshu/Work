@@ -61,8 +61,8 @@
         height: 8vh;
     }
 
-    nav .nav-logo h1{
-        font-size: 1rem;
+    nav .nav-logo h1 {
+        font-size: 1.2rem;
     }
 
     nav .nav-link a button {
@@ -77,11 +77,7 @@
 
     nav .nav-link {
         gap: 20px;
-    }
-
-    .res-link {
-        display: none;
-    }
+    }   
 
 
     /* header end */
@@ -317,10 +313,39 @@
 
     /* vip */
 
-    .vip{
+    .vip {
         height: 20vh;
         padding-top: 20px;
     }
 
     /* vip end */
+
+
+    nav .nav-click {
+        display: block;
+    }
+
+    nav .nav-click {
+        color: #feda8d;
+        font-size: 1.3rem;
+    }
+
+    nav .nav-link {
+        background-color: #1b010082;
+        backdrop-filter: blur(10px);
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        visibility: hidden;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        position: absolute;
+        top: 8vh;
+        left: 0;
+        padding: 20px 0px;
+        transition: all .3s;
+    }
 }
