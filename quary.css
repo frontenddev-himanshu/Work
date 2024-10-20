@@ -348,4 +348,18 @@
         padding: 20px 0px;
         transition: all .3s;
     }
+
+
+
+
+    /* rating-row */
+
+    .rating-row{
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        z-index: -1;
+    }
+
+    /* rating-row  end*/
 }

@@ -441,6 +441,10 @@ footer {
 }
 
 .hire-content a button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
     width: 120px;
     height: 40px;
     border-radius: 10px;
@@ -450,6 +454,10 @@ footer {
     background: #01a124;
     color: #ffffff;
     cursor: pointer;
+}
+
+.hire-content a button i {
+    font-size: 1.2rem;
 }
 
 /* girl-hire end */
@@ -775,13 +783,153 @@ footer {
 
 
 
-.nav-click{
+.nav-click {
     display: none;
 }
 
 
-.p-bold{
+.p-bold {
     font-size: 1rem;
     color: #feda8d;
     font-weight: 500;
+}
+
+.girl-details .girl-number a button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.girl-details .girl-number a button i {
+    font-size: 1.1rem;
+}
+
+
+
+/* girl page */
+
+.girl-p {
+    width: 100%;
+    height: 50vh;
+    background: url(https://hothubby.co.in/wp-content/uploads/2022/03/Delhi-local-Escorts-service.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 50px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.girl-p a {
+    text-decoration: none;
+    margin-bottom: 60px;
+}
+
+.girl-p a button {
+    width: 220px;
+    height: 55px;
+    border: none;
+    font-size: 1rem;
+    background: #01a124;
+    border-radius: 10px;
+    transition: 0.20s ease all;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+.girl-p a button:hover {
+    background-color: #feda8d;
+    color: #1b0100;
+}
+
+.girl-p a button i {
+    font-size: 1.2rem;
+}
+
+
+/* girl-imformation */
+.girl-imformation {
+    background-color: #ffffff;
+}
+
+.girl-imformation p {
+    color: #333333;
+    font-size: .0.9rem;
+}
+
+/* girl-imformation end */
+
+
+
+
+
+
+/* girl-rating */
+
+.girl-rating {
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0px;
+    overflow-x: hidden;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.rating-container{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.rating-row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+}
+
+.rating-box{
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    outline: 3px solid #feda8d;
+}
+
+.rating-box img{
+    width: 100%;
+    height: 65%;
+}
+
+.rating-icon{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.rating-icon i{
+    font-size: 1.2rem;
+    color: #feda8d;
+}
+
+/* girl-rating */
+
+
+
+.location-p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 600;
 }
