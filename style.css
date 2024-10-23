@@ -8,17 +8,55 @@
     scroll-behavior: smooth;
 }
 
+body{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+    font-size: 2rem !important;
+    font-weight: 600;
+}
+
+p{
+    color: white !important;
+    font-size: 1rem;
+}
+
+h3{
+    font-size: 1.3rem !important;
+    color: white;
+}
+
+h4{
+    color: white;
+}
+
+
+span{
+    color: white;
+}
 
 /* header */
 
 header {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 7vh;
+    height: 8vh;
     overflow-x: hidden;
-    background: #1b0100;
+    background: white;
+}
+
+header marquee{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    font-size: 0.9rem;
+    font-weight: 700;
 }
 
 nav {
@@ -29,20 +67,23 @@ nav {
     height: fit-content;
 }
 
-nav .nav-logo {
-    color: #feda8d;
+
+nav .nav-logo h1{
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #333333
 }
 
 nav .nav-link {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 nav .nav-link a {
     text-decoration: none;
-    color: #feda8d;
-    font-size: 0.8rem;
+    color: #333333;
+    font-size: 0.9rem;
     font-weight: 600;
 }
 
@@ -51,10 +92,10 @@ nav .nav-link a button {
     height: 40px;
     border-radius: 50px;
     border: none;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 700;
-    background: #feda8d;
-    color: #6d0200;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    color: black;
     cursor: pointer;
 }
 
@@ -69,7 +110,7 @@ nav .nav-link a button {
 .state {
     width: 100%;
     height: 10vh;
-    background-color: #eaeaea;
+    /* background-color: #eaeaea; */
     margin-top: 10px;
     display: flex;
     justify-content: center;
@@ -120,7 +161,7 @@ nav .nav-link a button {
 
 .links-con a {
     text-decoration: none;
-    color: #999999;
+    color: white;
     font-weight: 500;
     transition: 0.20s ease all;
 }
@@ -144,7 +185,6 @@ nav .nav-link a button {
 .girls {
     width: 100%;
     height: auto;
-    background-color: #eaeaea;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -159,9 +199,10 @@ nav .nav-link a button {
 .girl-details {
     width: 100%;
     height: 200px;
-    background: #fffdea;
+    background: rgba(0, 0, 0, 0.468);
+    backdrop-filter: blur(10px);
     display: flex;
-    border: 2px solid #feda8d;
+    border: 2px solid white;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: 10px;
@@ -170,7 +211,7 @@ nav .nav-link a button {
 .girl-img {
     width: 15%;
     height: 100%;
-    border-right: 2px solid #feda8d;
+    border-right: 2px solid white;
 }
 
 .girl-img img {
@@ -191,18 +232,20 @@ nav .nav-link a button {
 
 .girl-information p {
     font-size: 0.9rem;
+    color: white;
 }
 
 .girl-information span {
     font-size: 0.8rem;
     font-weight: 700;
-    color: #999999;
+    color: white;
 }
+
 
 .girl-number {
     width: 15%;
     height: 100%;
-    border-left: 2px solid #feda8d;
+    border-left: 2px solid white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -218,12 +261,12 @@ nav .nav-link a button {
     border: none;
     background: #f0eedc;
     border-radius: 10px;
-    transition: 0.20s ease all;
+    transition: 0.30s ease all;
     cursor: pointer;
 }
 
 .girl-number a:hover button {
-    background: #00838f;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
     color: #ffffff;
 }
 
@@ -238,7 +281,6 @@ nav .nav-link a button {
     overflow-x: hidden;
     display: flex;
     justify-content: center;
-    background: #eaeaea;
 }
 
 .para-con {
@@ -271,8 +313,8 @@ footer {
     width: 100%;
     height: fit-content;
     padding-top: 20px;
-    margin-top: 50px;
-    border-top: 2px solid #999999;
+    margin-top: 40px;
+    /* border-top: 2px solid white; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,7 +335,6 @@ footer {
 }
 
 .footer-con ul li {
-    color: #ca9c9a;
     font-size: 0.9rem;
     transition: 0.20s ease all;
 }
@@ -304,10 +345,10 @@ footer {
 
 .footer-con a {
     text-decoration: none;
+    color: white;
 }
 
 .copyright {
-    margin-top: 20px;
     width: 100%;
     height: 80px;
     padding: 10px 0px;
@@ -315,8 +356,8 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 0.9rem;
-    background: #1b0100;
-    color: #feda8d;
+    color: white;
+    border-top: 2px solid white;
 }
 
 /* footer end */
@@ -330,7 +371,7 @@ footer {
 .click-top {
     width: 55px;
     height: 55px;
-    border: 2PX solid #feda8d;
+    border: 2PX solid white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -354,7 +395,7 @@ footer {
     text-decoration: none;
     font-size: 1rem;
     color: #1b0100;
-    background: #feda8d;
+    background: white;
     border-radius: 50%;
     transition: 0.2S ease all;
 }
@@ -372,14 +413,23 @@ footer {
 
 
 /* front-img */
-.front-img {
+.swip{
     width: 100%;
-    height: 70vh;
-    background: url(Scr/footer.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 50vh;
 }
+
+.swiper{
+    width: 100%;
+    height: 100%;
+}
+
+.swip img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
 
 /* front-img end */
 
@@ -391,8 +441,8 @@ footer {
 
 .girl-hire {
     width: 100%;
-    height: 52vh;
-    background: #1b0100;
+    height: 50vh;
+    /* background: #1b0100; */
     overflow-x: hidden;
     display: flex;
     justify-content: center;
@@ -403,12 +453,13 @@ footer {
     width: 90%;
     height: 95%;
     display: flex;
+    align-items: center;
 }
 
 .hire-img {
-    height: 100%;
+    height: 400px;
     width: 400px;
-    border-radius: 20px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
     overflow: hidden;
 }
 
@@ -427,14 +478,6 @@ footer {
     padding-left: 20px;
 }
 
-.hire-content h1 {
-    color: #fde38c;
-}
-
-.hire-content p {
-    color: #ca9c9a;
-    font-size: 0.8rem;
-}
 
 .hire-content a {
     text-decoration: none;
@@ -475,7 +518,6 @@ footer {
     width: 100%;
     height: fit-content;
     padding: 20px 0px;
-    background: #6d0200;
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -502,8 +544,15 @@ footer {
 .profile-box {
     width: 320px;
     height: 400px;
-    background-color: #1b0100;
-    border: 1px solid #feda8d;
+    background-color: rgba(0, 0, 0, 0.499);
+    border: 2px solid white;
+    border-radius: 0% 25% 27% 25% / 28% 25% 0% 23% ;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.profile-box:hover{
+    border-radius: 0;
 }
 
 .profile-box img {
@@ -513,6 +562,10 @@ footer {
 
 .profile-name {
     width: 100%;
+    height: 12%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
     color: #fde38c;
     text-align: center;
 }
@@ -530,7 +583,7 @@ footer {
     width: 100%;
     height: fit-content;
     padding: 20px 0px;
-    background: #6d0200;
+    /* background: #6d0200; */
     display: flex;
     justify-content: center;
     overflow-x: hidden;
@@ -595,14 +648,15 @@ footer {
     width: 280px;
     height: 300px;
     color: #1b0100;
-    background: url(https://www.trishalareddy.com/images/cat-bg.webp);
+    background: rgba(255, 255, 255, 0.332);
+    backdrop-filter: blur(10px);
     background-size: (cover);
     background-repeat: no-repeat;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    border-radius: 0% 25% 27% 25% / 28% 25% 0% 23% ;
 }
 
 /* chat details end */
@@ -619,7 +673,7 @@ footer {
     width: 100%;
     height: fit-content;
     padding: 20px 0px;
-    background: #6d0200;
+    /* background: #6d0200; */
     display: flex;
     justify-content: center;
 }
@@ -662,7 +716,7 @@ footer {
     padding: 20px 0px;
     display: flex;
     justify-content: center;
-    background: #6d0200;
+    /* background: #6d0200; */
     padding-top: 50px;
     overflow-x: hidden;
 }
@@ -712,7 +766,7 @@ footer {
     display: flex;
     justify-content: center;
     padding: 10px 0px;
-    background: #6d0200;
+    /* background: #6d0200; */
 }
 
 .girl-1-con {
@@ -736,8 +790,8 @@ footer {
 .vip {
     width: 100%;
     height: 60vh;
-    padding-top: 50px;
-    background: #6d0200;
+    /* padding-top: 50px; */
+    /* background: #6d0200; */
 }
 
 .vip img {
@@ -757,28 +811,36 @@ footer {
 .bottom-num {
     width: 100%;
     height: 5vh;
-    background-color: red;
     display: flex;
     overflow-x: hidden;
     position: fixed;
     bottom: 0;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    box-shadow: 0px 0px 20px black;
 }
 
 .bottom-num a {
     width: 50%;
     height: 100%;
-    background-color: darkgoldenrod;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    color: white;
+}
+
+.bottom-num a:hover{
+    color: white;
+}
+
+.bottom-num  i{
     font-size: 1.2rem;
-    color: #f0eedc;
 }
 
 .num-b {
     border-right: 2px solid #1b0100;
-    background-color: darkblue !important;
 }
 
 
@@ -851,9 +913,7 @@ footer {
 
 
 /* girl-imformation */
-.girl-imformation {
-    background-color: #ffffff;
-}
+
 
 .girl-imformation p {
     color: #333333;
@@ -897,13 +957,20 @@ footer {
 }
 
 .rating-box{
-    height: 500px;
+    height: 400px;
     width: 300px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     text-align: center;
-    outline: 3px solid #feda8d;
+    outline: 3px solid white;
+    border-radius: 0% 25% 27% 25% / 28% 25% 0% 23% ;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.rating-box:hover{
+    border-radius: 0px;
 }
 
 .rating-box img{
@@ -936,5 +1003,5 @@ footer {
 
 
 .privacy {
-    background: darkcyan;
+    /* background: darkcyan; */
 }

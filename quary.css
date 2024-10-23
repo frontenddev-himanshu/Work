@@ -209,7 +209,7 @@
 
     /* front-img */
 
-    .front-img {
+    .swip {
         height: 20vh;
     }
 
@@ -331,7 +331,7 @@
     }
 
     nav .nav-link {
-        background-color: #1b010082;
+        background-color: rgba(255, 255, 255, 0.426);
         backdrop-filter: blur(10px);
         height: auto;
         width: 100%;
