@@ -251,6 +251,7 @@
     }
 
     .hire-content {
+        margin-top: 10px;
         width: 90%;
     }
 
@@ -327,7 +328,7 @@
 
 
     nav .nav-click {
-        color: #feda8d;
+        color: #333333;
         font-size: 1.3rem;
     }
 
