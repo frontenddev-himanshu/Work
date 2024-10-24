@@ -959,6 +959,7 @@ footer {
     height: fit-content;
     flex-direction: column;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .rating-row {
