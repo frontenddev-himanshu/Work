@@ -62,7 +62,7 @@
     }
 
     nav .nav-logo h1 {
-        font-size: 1.2rem;
+        font-size: 1.2rem !important;
     }
 
     nav .nav-link a button {
@@ -77,7 +77,7 @@
 
     nav .nav-link {
         gap: 20px;
-    }   
+    }
 
 
     /* header end */
@@ -325,6 +325,7 @@
         display: block;
     }
 
+
     nav .nav-click {
         color: #feda8d;
         font-size: 1.3rem;
@@ -354,7 +355,7 @@
 
     /* rating-row */
 
-    .rating-row{
+    .rating-row {
         align-items: center;
         flex-direction: column;
         gap: 20px;
